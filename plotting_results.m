@@ -21,8 +21,8 @@ results = [
 2 3 2 2 1 3; % 18
 ];
 
-mean_results = zeros(18, 1);
-for i = 1:18
+mean_results = zeros(size(results, 1), 1);
+for i = 1:size(results, 1)
    mean_results(i, 1) = mean(results(i,:));
 end
 MEAN = mean(mean_results);
